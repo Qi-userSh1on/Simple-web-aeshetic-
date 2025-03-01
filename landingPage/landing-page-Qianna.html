@@ -1,0 +1,81 @@
+<!DOCTYPE htmll>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page dengan CSS</title>
+    <link rel="stylesheet" type="text/css" href="page.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">QVwebsite</a>
+          </li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">Blog</a>
+          </li>
+          <li>
+            <a href="#profile">Profile</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+        <div class="jumbotron" id="home">
+          <article id="home">
+        <h1>QVwebsite</h1>
+        <p style="text-align: center; font-size: 30px;">Website pribadi</p>
+        </div>
+        <div class="container" id="about">
+          <img src="MeQianna.jpg" style="border-radius: 50%; float: right;  box-shadow: 0 4px 8px 0 rgba(143, 119, 119, 0.3),
+    0 6px 15px 0 rgba(0, 0, 0, 0.5);" width="300px" height="300px">
+          <h1 style="text-align: left;">Halo, Selamat datang!</h1>
+          <p class="grid-text">Kenalin, saya Qianna Vassaputri sebagain creator website sederhana ini</p>
+          <p class="grid-text">Kalian juga bisa melihat galery saya jika kalian scroll loh, dengan mendengarkan lagu!</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <audio autoplay loop>
+        <source src="guitarbackgroundsongs.mp3" type="audio/mpeg">
+      </audio> <p hidden>music background</p>
+      <div id="content">
+        <div id="profile">
+          <h2>My Image Galery</h2>
+          <p>Scroll to the left to see my image galery</p>
+          <div class="scroll-container">
+            <img src="img1.jpg" width="400" height="500">
+            <img src="img2.jpg"  width="400" height="500">
+            <img src="img3.jpg" width="400" height="500">
+            <img src="img4.jpg" width="400" height="500">
+            <img src="img5.jpg" width="400"height="500">
+            <img src="img6.jpg"  width="400" height="500">
+            <img src="img7.jpg" width="400" height="500">
+            <img src="img8.jpg" width="400" height="500">
+            <img src="img9.jpg" width="400" height="500">
+            <img src="img10.jpg" width="400" height="500">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contact" id="contact">
+        <a class="one" href="https://www.instagram.com/shn.qiwht_?igsh=MW9saWQ1YXRlMmhmOQ==">Instagram</a>
+        <br><a class="two" href="https://www.tiktok.com/@shion_my4rt?_t=8qAdPqUPvv8&_r=1">Tiktok</a>
+      <p style="text-align: center; color: #ffffff;">Qianna Vassaputri &copy; 2025</p>
+    </div>
+    </footer>
+    <script>
+      document.addEventListener('click', () => {
+        const audio = document.querySelector('audio');
+        audio.loop = true; 
+      });
+    </script>
+  </body>
+</html>
